@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>130</y>
+      <w>270</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+ActionListener
+--
++actionPerformed(ActionEvent):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>330</y>
+      <w>270</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>LoginWindow
+{registeration}
+--
+_-FILE_PATH:String_
+_-userLabel:JLabel_
+_-userText:JTextField_
+_-passwrodLabel:JLabel_
+_-passwordText:JPasswordField_
+_-button:JButton_
+_-success:JLabel_
+--
++LoginWindow()
+_+main(String[]):void_
+_+Login():void_
++actionPerformed(ActionEvent):void
+_-fromJson(String,String):boolean_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>350</y>
+      <w>210</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>User
+{registeration}
+--
+-username:String
+-password:String
+--
++getUsername():String
++User()
++User(String,String)
++getPassword():String
++setUsername(String):void
++setPassword(String):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>190</y>
+      <w>30</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>
